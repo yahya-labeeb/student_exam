@@ -1,7 +1,7 @@
 {
   "name": "student-exam",
-  "homepage": "https://yahya-labeeb.github.io/student_exam",
-  "private":"false",
+  "private":true,
+  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
