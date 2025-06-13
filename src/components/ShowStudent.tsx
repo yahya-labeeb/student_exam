@@ -9,7 +9,7 @@ interface Props{
   setStudents: Dispatch<SetStateAction<Student[]>>
 }
 const initialstate={id:0, name:"" , age:"0", notes:""}
-function ShowStudent({setStudents,students}:Props){
+function ShowStudent({students}:Props){
   const [formdata, setformdata]=useState(initialstate)
   const [Mydata,setMydata]=useState(students)
 
