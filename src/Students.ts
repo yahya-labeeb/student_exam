@@ -1,14 +1,14 @@
 import type { Student } from "./utils/data"
 
 export const fetchstudent= async()=>{
-const respons= await fetch('https://vercel.com/yahya-labeebs-projects/reactresult')
+const respons= await fetch('https://reactresult-seven.vercel.app/')
 return await respons.json()
 
 }
 
 export const getStudent = async(data:Student) => {
     console.log('output')
-    const respons=await fetch('https://vercel.com/yahya-labeebs-projects/reactresult'+data.id, {
+    const respons=await fetch('https://reactresult-seven.vercel.app/'+data.id, {
       method: 'get',
         headers:{
             'Content-Type':'application/json'
@@ -22,7 +22,7 @@ export const getStudent = async(data:Student) => {
 
 
 export const creatStudent=async(data: Student) =>{
-    const respons=await fetch('https://vercel.com/yahya-labeebs-projects/reactresult', {
+    const respons=await fetch('https://reactresult-seven.vercel.app/', {
         method:'POST',
         body:JSON.stringify(data),
         headers:{
