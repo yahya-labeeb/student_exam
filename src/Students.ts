@@ -1,7 +1,7 @@
 import type { Student } from "./utils/data"
 
 export const fetchstudent= async()=>{
-const respons= await fetch('https://reactresult-seven.vercel.app/')
+const respons= await fetch('https://reactresult-kohl.vercel.app/')
 return await respons.json()
 
 }
